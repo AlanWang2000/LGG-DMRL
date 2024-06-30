@@ -10,7 +10,7 @@ from util.dataset import MultiDataset
 from util.base import DNN, VAE_DNN, GCN, MI, kl_Loss
 
 
-class TestGCN:
+class MvRL:
     def __init__(self, X, W, gt, dims, activations, device='cuda:0'):
         self.device = device
         self.V = len(X)
