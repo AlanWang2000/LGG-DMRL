@@ -18,6 +18,3 @@ model = TestGCN(X, W, Y, args['dims'], args['act'])
 S, H, Y = model.train(args['lr'], args['epochs'], args['params'], args['batch_size'], log_epoch=10, log_show=True)
 cluster(clusters, H, Y, method='KMeans')
 classify(H, Y)
-for i in range(V):
-    print('==== s[{}] ===='.format(i))
-    cluster(clusters, S[i], Y, method='KMeans')
