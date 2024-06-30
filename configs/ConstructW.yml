@@ -1,0 +1,14 @@
+handwritten:
+  batch_size: 10000
+  epochs: 
+    total:    50
+  lr:
+    ae:       0.001
+  act:
+    ae:       'prelu'
+  dims:
+    ae:       [[800], [600]]
+  params:
+    alpha:    1
+    knn:      10
+    set_one:  True

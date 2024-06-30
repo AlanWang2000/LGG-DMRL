@@ -1,0 +1,26 @@
+handwritten:
+  batch_size: 10000
+  epochs: 
+    pre:   50
+    total: 60
+  lr:
+    pre:   0.001
+    ae:    0.001
+    dg:    0.001
+    h:     0.001
+  act:
+    en:    
+    gcn:   
+    de:    'softplus'
+    dg:    
+  dims:
+    en:    [[1200, 32], [1000, 32]]
+    gcn:   [[1000, 32], [700, 32]]
+    de:    [[32, 1000], [32, 1000]]
+    dg:    [1000, 32]
+    h:     100
+    mi:    [32, 1]
+  params:
+    alpha: 1      # loss_dg
+    beta:  1      # loss_kl
+    gamma: 10     # loss_mi
